@@ -23,8 +23,16 @@ async function updateResults() {
     // 2. PERMANENT HISTORY: Read existing history, add new days, save back
     const manifestPath = path.join(dataDir, 'history.json');
     let historyArray = [];
+    
     if (fs.existsSync(manifestPath)) {
-      historyArray = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      const existing = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      // SAFETY CHECK: Convert old format (strings) to new format (objects)
+      historyArray = existing.map(item => {
+        if (typeof item === 'string') {
+          return { date: item, results: [] }; // Convert old string to object
+        }
+        return item; // Keep existing objects
+      });
     }
     
     const historyDir = path.join(dataDir, 'history');
@@ -32,12 +40,16 @@ async function updateResults() {
 
     // Add/update days from the scrape
     Object.keys(fullData).forEach(dateKey => {
-      // Save individual date file just in case
+      // Save individual date file
       fs.writeFileSync(path.join(historyDir, `${dateKey}.json`), JSON.stringify(fullData[dateKey], null, 2));
       
       // If this date isn't in our permanent history yet, add it
       if (!historyArray.find(item => item.date === dateKey)) {
         historyArray.push({ date: dateKey, results: fullData[dateKey] });
+      } else {
+        // If it exists, update its results just in case
+        let idx = historyArray.findIndex(item => item.date === dateKey);
+        historyArray[idx].results = fullData[dateKey];
       }
     });
 
@@ -59,11 +71,13 @@ async function updateResults() {
       const parts = item.date.split('-');
       const formattedDate = `${parts[0]} ${months[parseInt(parts[1])-1]} ${parts[2]}`;
       
-      item.results.forEach(r => {
-        if (summary[r.slotkey] && summary[r.slotkey].length < 10) {
-          summary[r.slotkey].push({ date: formattedDate, num: r.num });
-        }
-      });
+      if (item.results && item.results.length > 0) {
+        item.results.forEach(r => {
+          if (summary[r.slotkey] && summary[r.slotkey].length < 10) {
+            summary[r.slotkey].push({ date: formattedDate, num: r.num });
+          }
+        });
+      }
     });
 
     fs.writeFileSync(path.join(dataDir, 'summary.json'), JSON.stringify(summary, null, 2));
