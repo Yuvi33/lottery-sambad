@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "16-06-2026",
+    "badge": "8:00 PM",
+    "date": "16 Jun 2026",
+    "num": "55C 72995",
+    "amount": "1 Crore",
+    "name": "Destiny Tuesday",
+    "drawno": "33"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "16-06-2026",
+    "badge": "6:00 PM",
+    "date": "16 Jun 2026",
+    "num": "84C 22447",
+    "amount": "1 Crore",
+    "name": "Prestige Tuesday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "16-06-2026",
+    "badge": "1:00 PM",
+    "date": "16 Jun 2026",
+    "num": "53H 25510",
+    "amount": "1 Crore",
+    "name": "Shine Tuesday",
+    "drawno": "33"
+  }
+]

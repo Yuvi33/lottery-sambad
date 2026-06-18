@@ -1,6 +1,15 @@
 {
-  "date": "18-06-2026",
-  "results": [
+  "18-06-2026": [
+    {
+      "slotkey": "6pm",
+      "datekey": "18-06-2026",
+      "badge": "6:00 PM",
+      "date": "18 Jun 2026",
+      "num": "86G 24682",
+      "amount": "1 Crore",
+      "name": "Supreme Thursday",
+      "drawno": "37"
+    },
     {
       "slotkey": "1pm",
       "datekey": "18-06-2026",
@@ -10,6 +19,198 @@
       "amount": "1 Crore",
       "name": "Star Thursday",
       "drawno": "33"
+    }
+  ],
+  "17-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "17-06-2026",
+      "badge": "8:00 PM",
+      "date": "17 Jun 2026",
+      "num": "46G 93135",
+      "amount": "1 Crore",
+      "name": "Dream Wednesday",
+      "drawno": "33"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "17-06-2026",
+      "badge": "6:00 PM",
+      "date": "17 Jun 2026",
+      "num": "90B 35305",
+      "amount": "1 Crore",
+      "name": "Regal Wednesday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "17-06-2026",
+      "badge": "1:00 PM",
+      "date": "17 Jun 2026",
+      "num": "70H 59699",
+      "amount": "1 Crore",
+      "name": "Spark Wednesday",
+      "drawno": "33"
+    }
+  ],
+  "16-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "16-06-2026",
+      "badge": "8:00 PM",
+      "date": "16 Jun 2026",
+      "num": "55C 72995",
+      "amount": "1 Crore",
+      "name": "Destiny Tuesday",
+      "drawno": "33"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "16-06-2026",
+      "badge": "6:00 PM",
+      "date": "16 Jun 2026",
+      "num": "84C 22447",
+      "amount": "1 Crore",
+      "name": "Prestige Tuesday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "16-06-2026",
+      "badge": "1:00 PM",
+      "date": "16 Jun 2026",
+      "num": "53H 25510",
+      "amount": "1 Crore",
+      "name": "Shine Tuesday",
+      "drawno": "33"
+    }
+  ],
+  "15-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "15-06-2026",
+      "badge": "8:00 PM",
+      "date": "15 Jun 2026",
+      "num": "96B 12204",
+      "amount": "1 Crore",
+      "name": "Clover Monday",
+      "drawno": "33"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "15-06-2026",
+      "badge": "6:00 PM",
+      "date": "15 Jun 2026",
+      "num": "98K 15563",
+      "amount": "1 Crore",
+      "name": "Legend Monday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "15-06-2026",
+      "badge": "1:00 PM",
+      "date": "15 Jun 2026",
+      "num": "81H 67173",
+      "amount": "1 Crore",
+      "name": "Rise Monday",
+      "drawno": "33"
+    }
+  ],
+  "14-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "14-06-2026",
+      "badge": "8:00 PM",
+      "date": "14 Jun 2026",
+      "num": "73A 26413",
+      "amount": "1 Crore",
+      "name": "Magic Sunday",
+      "drawno": "32"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "14-06-2026",
+      "badge": "6:00 PM",
+      "date": "14 Jun 2026",
+      "num": "81B 12621",
+      "amount": "1 Crore",
+      "name": "Empire Sunday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "14-06-2026",
+      "badge": "1:00 PM",
+      "date": "14 Jun 2026",
+      "num": "81D 04800",
+      "amount": "1 Crore",
+      "name": "Wish Sunday",
+      "drawno": "32"
+    }
+  ],
+  "13-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "13-06-2026",
+      "badge": "8:00 PM",
+      "date": "13 Jun 2026",
+      "num": "49H 62438",
+      "amount": "1 Crore",
+      "name": "Lucky Saturday",
+      "drawno": "32"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "13-06-2026",
+      "badge": "6:00 PM",
+      "date": "13 Jun 2026",
+      "num": "93K 26400",
+      "amount": "1 Crore",
+      "name": "Elite Saturday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "13-06-2026",
+      "badge": "1:00 PM",
+      "date": "13 Jun 2026",
+      "num": "46A 82253",
+      "amount": "1 Crore",
+      "name": "Vision Saturday",
+      "drawno": "32"
+    }
+  ],
+  "12-06-2026": [
+    {
+      "slotkey": "8pm",
+      "datekey": "12-06-2026",
+      "badge": "8:00 PM",
+      "date": "12 Jun 2026",
+      "num": "36B 31243",
+      "amount": "1 Crore",
+      "name": "Horizon Friday",
+      "drawno": "32"
+    },
+    {
+      "slotkey": "6pm",
+      "datekey": "12-06-2026",
+      "badge": "6:00 PM",
+      "date": "12 Jun 2026",
+      "num": "80A 46436",
+      "amount": "1 Crore",
+      "name": "Crown Friday",
+      "drawno": "37"
+    },
+    {
+      "slotkey": "1pm",
+      "datekey": "12-06-2026",
+      "badge": "1:00 PM",
+      "date": "12 Jun 2026",
+      "num": "93A 73156",
+      "amount": "1 Crore",
+      "name": "Victory Friday",
+      "drawno": "32"
     }
   ]
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "15-06-2026",
+    "badge": "8:00 PM",
+    "date": "15 Jun 2026",
+    "num": "96B 12204",
+    "amount": "1 Crore",
+    "name": "Clover Monday",
+    "drawno": "33"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "15-06-2026",
+    "badge": "6:00 PM",
+    "date": "15 Jun 2026",
+    "num": "98K 15563",
+    "amount": "1 Crore",
+    "name": "Legend Monday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "15-06-2026",
+    "badge": "1:00 PM",
+    "date": "15 Jun 2026",
+    "num": "81H 67173",
+    "amount": "1 Crore",
+    "name": "Rise Monday",
+    "drawno": "33"
+  }
+]

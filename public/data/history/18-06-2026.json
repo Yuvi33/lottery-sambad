@@ -1,15 +1,22 @@
-{
-  "date": "18-06-2026",
-  "results": [
-    {
-      "slotkey": "1pm",
-      "datekey": "18-06-2026",
-      "badge": "1:00 PM",
-      "date": "18 Jun 2026",
-      "num": "80L 82621",
-      "amount": "1 Crore",
-      "name": "Star Thursday",
-      "drawno": "33"
-    }
-  ]
-}
+[
+  {
+    "slotkey": "6pm",
+    "datekey": "18-06-2026",
+    "badge": "6:00 PM",
+    "date": "18 Jun 2026",
+    "num": "86G 24682",
+    "amount": "1 Crore",
+    "name": "Supreme Thursday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "18-06-2026",
+    "badge": "1:00 PM",
+    "date": "18 Jun 2026",
+    "num": "80L 82621",
+    "amount": "1 Crore",
+    "name": "Star Thursday",
+    "drawno": "33"
+  }
+]

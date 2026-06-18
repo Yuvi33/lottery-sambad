@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "17-06-2026",
+    "badge": "8:00 PM",
+    "date": "17 Jun 2026",
+    "num": "46G 93135",
+    "amount": "1 Crore",
+    "name": "Dream Wednesday",
+    "drawno": "33"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "17-06-2026",
+    "badge": "6:00 PM",
+    "date": "17 Jun 2026",
+    "num": "90B 35305",
+    "amount": "1 Crore",
+    "name": "Regal Wednesday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "17-06-2026",
+    "badge": "1:00 PM",
+    "date": "17 Jun 2026",
+    "num": "70H 59699",
+    "amount": "1 Crore",
+    "name": "Spark Wednesday",
+    "drawno": "33"
+  }
+]

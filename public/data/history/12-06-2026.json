@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "12-06-2026",
+    "badge": "8:00 PM",
+    "date": "12 Jun 2026",
+    "num": "36B 31243",
+    "amount": "1 Crore",
+    "name": "Horizon Friday",
+    "drawno": "32"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "12-06-2026",
+    "badge": "6:00 PM",
+    "date": "12 Jun 2026",
+    "num": "80A 46436",
+    "amount": "1 Crore",
+    "name": "Crown Friday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "12-06-2026",
+    "badge": "1:00 PM",
+    "date": "12 Jun 2026",
+    "num": "93A 73156",
+    "amount": "1 Crore",
+    "name": "Victory Friday",
+    "drawno": "32"
+  }
+]
