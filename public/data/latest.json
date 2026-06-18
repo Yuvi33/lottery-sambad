@@ -1,4 +1,26 @@
 {
-  "nagaland": [],
-  "kerala": []
+  "nagaland": [
+    {
+      "date": "2026-06-18",
+      "time": "1:00 PM",
+      "drawName": "Sample Draw (Update Scraper Later)",
+      "winningNumbers": [
+        "41071"
+      ],
+      "prize": "1 Crore",
+      "source": "Nagaland State Lottery"
+    }
+  ],
+  "kerala": [
+    {
+      "date": "2026-06-18",
+      "time": "3",
+      "drawName": "Sample Draw (Update Scraper Later)",
+      "winningNumbers": [
+        "83313"
+      ],
+      "prize": "1 Crore",
+      "source": "Kerala State Lottery"
+    }
+  ]
 }
