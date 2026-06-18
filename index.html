@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lottery Sambad Today Nagaland State 1 PM, 6 PM & 8 PM Result</title>
-    <meta name="description" content="Lottery Sambad Result Today 1 PM, 6 PM, 8 PM. Check Nagaland State Dear Lottery live result, old result, winner list.">
+    <meta name="description" content="Lottery Sambad Result Today 1 PM, 6 PM, 8 PM. Check Nagaland State Dear Lottery live result.">
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}body{font:16px/1.7 system-ui,-apple-system,sans-serif;color:#333;background:#fff}
+        *{margin:0;padding:0;box-sizing:border-box}body{font:16px/1.7 system-ui,sans-serif;color:#333;background:#fff}
         a{color:#2563eb;text-decoration:underline}.w{max-width:900px;margin:0 auto;padding:0 16px}
         nav{background:#e63223;padding:15px 0}.nav-in{max-width:900px;margin:0 auto;padding:0 16px;display:flex;justify-content:space-between;align-items:center}
         .nav-logo{color:#fff;font-weight:800;font-size:24px;text-transform:uppercase;text-decoration:none}
@@ -14,7 +14,7 @@
         .rslider{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:20px 16px}
         .rslider::-webkit-scrollbar{display:none}
         .rcard{flex:0 0 85%;scroll-snap-align:center;background:#fff;border-radius:8px;border:1px solid #e3e7ec;padding:20px;text-align:center;position:relative}
-        .rcard__date{display:inline-block;font-size:14px;font-weight:800;color:#dc2626;background:#fce9e9;padding:6px 12px;border-radius:9px;margin-bottom:10px}
+        .rcard__date{display:inline-block;font-size:14px;font-weight:800;padding:6px 12px;border-radius:9px;margin-bottom:10px}
         .rcard__num{font:900 38px/1 "Arial Black",sans-serif;margin:15px 0;letter-spacing:1px}
         .rcard__prize{color:#138808;font-weight:800;font-size:18px}.rcard__meta{color:#647281;font-size:13px;margin-top:5px}
         .rcard[data-slot="1pm"]{background:#f6fbef}.rcard[data-slot="1pm"] .rcard__num{color:#138808}.rcard[data-slot="1pm"] .rcard__date{background:#16a34a;color:#ffdd00}
@@ -65,9 +65,6 @@
 
         <h3>Is Nagaland State lottery real?</h3>
         <div class="faq"><p>Yes, Nagaland State Lottery is 100% real. It is owned and regulated by the Government of Nagaland, established in 1972 under the Lotteries (Regulation) Act, 1998. The draws are conducted transparently under government supervision, and results are published officially in PDF format with complete winner details.</p></div>
-
-        <h3>How much time will it take to get money after winning the lottery?</h3>
-        <div class="faq"><p>After winning a prize, it takes approximately three days to receive the prize money after submission of all required documents along with the original winning ticket to the Nagaland State Lottery office. For prizes above ₹10,000, a government-issued ID proof is mandatory.</p></div>
     </div>
 
     <div class="pmbar">
@@ -75,14 +72,17 @@
     </div>
 
     <script>
-        fetch('./data/latest.json')
-            .then(res => res.json())
+        // Using absolute path '/data/' to ensure it finds the folder at the root of the website
+        fetch('/data/latest.json')
+            .then(res => {
+                if (!res.ok) throw new Error('JSON file not found. HTTP error ' + res.status);
+                return res.json();
+            })
             .then(data => {
                 const slider = document.getElementById('slider');
                 slider.innerHTML = '';
                 let cardsHtml = '';
                 
-                // Iterate through all dates in the JSON (Today + Yesterday)
                 Object.keys(data).forEach(dateKey => {
                     data[dateKey].forEach(r => {
                         cardsHtml += `
@@ -98,7 +98,7 @@
                 slider.innerHTML = cardsHtml;
             })
             .catch(err => {
-                document.getElementById('slider').innerHTML = '<div class="rcard"><div class="rcard__num">Error loading data</div></div>';
+                document.getElementById('slider').innerHTML = `<div class="rcard"><div class="rcard__num" style="color:red; font-size:16px;">Error: ${err.message}</div><div class="rcard__meta">Make sure the /data folder was uploaded to Cloudflare.</div></div>`;
             });
     </script>
 </body>
