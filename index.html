@@ -75,7 +75,7 @@
     </div>
 
     <script>
-        fetch('public/data/latest.json')
+        fetch('./data/latest.json')
             .then(res => res.json())
             .then(data => {
                 const slider = document.getElementById('slider');
