@@ -1,0 +1,22 @@
+{
+  "nagaland": [
+    {
+      "date": "2026-06-17",
+      "time": "1:00 PM",
+      "drawName": "Sample Draw",
+      "winningNumbers": ["12345"],
+      "prize": "1 Crore",
+      "source": "Nagaland State Lottery"
+    }
+  ],
+  "kerala": [
+    {
+      "date": "2026-06-17",
+      "time": "4:00 PM",
+      "drawName": "Sample Draw",
+      "winningNumbers": ["67890"],
+      "prize": "1 Crore",
+      "source": "Kerala State Lottery"
+    }
+  ]
+}
