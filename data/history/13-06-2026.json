@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "13-06-2026",
+    "badge": "8:00 PM",
+    "date": "13 Jun 2026",
+    "num": "49H 62438",
+    "amount": "1 Crore",
+    "name": "Lucky Saturday",
+    "drawno": "32"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "13-06-2026",
+    "badge": "6:00 PM",
+    "date": "13 Jun 2026",
+    "num": "93K 26400",
+    "amount": "1 Crore",
+    "name": "Elite Saturday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "13-06-2026",
+    "badge": "1:00 PM",
+    "date": "13 Jun 2026",
+    "num": "46A 82253",
+    "amount": "1 Crore",
+    "name": "Vision Saturday",
+    "drawno": "32"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "slotkey": "8pm",
+    "datekey": "14-06-2026",
+    "badge": "8:00 PM",
+    "date": "14 Jun 2026",
+    "num": "73A 26413",
+    "amount": "1 Crore",
+    "name": "Magic Sunday",
+    "drawno": "32"
+  },
+  {
+    "slotkey": "6pm",
+    "datekey": "14-06-2026",
+    "badge": "6:00 PM",
+    "date": "14 Jun 2026",
+    "num": "81B 12621",
+    "amount": "1 Crore",
+    "name": "Empire Sunday",
+    "drawno": "37"
+  },
+  {
+    "slotkey": "1pm",
+    "datekey": "14-06-2026",
+    "badge": "1:00 PM",
+    "date": "14 Jun 2026",
+    "num": "81D 04800",
+    "amount": "1 Crore",
+    "name": "Wish Sunday",
+    "drawno": "32"
+  }
+]
