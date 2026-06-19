@@ -1,0 +1,32 @@
+name: Backfill History
+
+on:
+  workflow_dispatch: # Only runs manually
+
+permissions:
+  contents: write 
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run backfill script
+        run: node src/scraper/backfill.js
+        
+      - name: Commit and push history
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/history/
+          git commit -m "Backfill history data" || echo "No changes to commit"
+          git push
