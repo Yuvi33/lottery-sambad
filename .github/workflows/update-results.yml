@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write 
+  deployments: write # <--- THIS FIXES THE 403 ERROR
 
 jobs:
   scrape-and-update:
@@ -19,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24' # <--- UPDATED TO FIX NODE DEPRECATION WARNING
           
       - name: Install dependencies
         run: npm install
@@ -35,7 +36,6 @@ jobs:
           git commit -m "Update lottery results - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
 
-      # NEW STEP: Automatically push the updated website to Cloudflare!
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
