@@ -27,10 +27,20 @@ jobs:
       - name: Run lottery scraper
         run: node src/scraper/lotteryScraper.js
         
-      - name: Commit and push results
+      - name: Commit and push results to GitHub
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/ 
           git commit -m "Update lottery results - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
+
+      # NEW STEP: Automatically push the updated website to Cloudflare!
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: sambad-lottery 
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
